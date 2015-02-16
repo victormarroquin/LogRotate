@@ -1,0 +1,7 @@
+ # Managed by Class['logrotate']
+/home/ubuntu/<%= @appname %>/log/*.log /var/log/<%= @appname %>/*.log {
+    size 700M
+    copytruncate
+    rotate 10
+    compress
+}
